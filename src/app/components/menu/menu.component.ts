@@ -8,15 +8,22 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
-  login() {
-    console.log('Performing login');
-    localStorage.setItem('isUserLoggedIn', 'true');
-    this.router.navigate(['/about']);
+  // login() {
+  //   console.log('Performing login');
+  //   localStorage.setItem('isUserLoggedIn', 'true');
+  //   this.router.navigate(['/about']);
+  // }
+
+  navigate(url) {
+    console.log(url);
+    this.router.navigate([url]);
   }
 
 }

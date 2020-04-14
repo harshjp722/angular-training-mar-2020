@@ -1,8 +1,21 @@
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['']">Home</a></li>
-        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" type="button" (click)='login()'>Generic</a></li>
-        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['elements']">Elements</a></li>
+        <li>
+            <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" type="button"
+                (click)="navigate('')">Home</a>
+        </li>
+        <li>
+            <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" type="button"
+                (click)="navigate('about')">Generic</a>
+        </li>
+        <li>
+            <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" type="button"
+                (click)="navigate('elements')">Elements</a>
+        </li>
+        <li>
+            <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" type="button"
+                (click)="navigate('test')">test</a>
+        </li>
     </ul>
 </nav>
