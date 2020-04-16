@@ -14,6 +14,8 @@ export class TestComponent implements OnInit {
   dummyText = 'hElLo';
   collection: string[] = ['a', 'b', 'c', 'd'];
   object = {foo: 'bar', baz: 'qux', nested: {xyz: 3, numbers: [1, 2, 3, 4, 5]}};
+  base = 5;
+  mobileNo = '1234567890';
 
   constructor() { }
 
